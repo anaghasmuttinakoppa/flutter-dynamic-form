@@ -7,7 +7,7 @@ void main() {
     await tester.pumpWidget(const DynamicFormExampleApp());
     await tester.pumpAndSettle();
 
-    expect(find.text('flutter_dynamic_form'), findsOneWidget);
+    expect(find.text('json_dynamic_form'), findsOneWidget);
     expect(find.text('Simple Form'), findsOneWidget);
 
     await tester.scrollUntilVisible(

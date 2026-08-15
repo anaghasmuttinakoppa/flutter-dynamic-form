@@ -1,4 +1,4 @@
-/// Base exception for the flutter_dynamic_form package.
+/// Base exception for the json_dynamic_form package.
 class DynamicFormException implements Exception {
   /// Creates a [DynamicFormException] with a human-readable [message].
   const DynamicFormException(this.message, {this.cause});

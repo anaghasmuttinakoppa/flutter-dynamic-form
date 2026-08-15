@@ -1,6 +1,6 @@
-# flutter_dynamic_form example
+# json_dynamic_form example
 
-Demonstrates Phases 1–5 of [flutter_dynamic_form](../README.md).
+Demonstrates Phases 1–5 of [json_dynamic_form](../README.md).
 
 ## Run
 

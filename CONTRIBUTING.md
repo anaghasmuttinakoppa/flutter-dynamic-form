@@ -1,4 +1,4 @@
-# Contributing to flutter_dynamic_form
+# Contributing to json_dynamic_form
 
 Thanks for helping improve this package. Please follow the process below so we can keep quality high and ship phase-by-phase.
 

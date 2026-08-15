@@ -1,4 +1,4 @@
-import 'package:flutter_dynamic_form/flutter_dynamic_form.dart';
+import 'package:json_dynamic_form/json_dynamic_form.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

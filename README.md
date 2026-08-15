@@ -1,12 +1,13 @@
-# flutter_dynamic_form
+# json_dynamic_form
 
 Generate fully dynamic, validated Flutter forms from JSON — no manual widget wiring.
 
-[![pub package](https://img.shields.io/pub/v/flutter_dynamic_form.svg)](https://pub.dev/packages/flutter_dynamic_form)
+[![pub package](https://img.shields.io/pub/v/json_dynamic_form.svg)](https://pub.dev/packages/json_dynamic_form)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 > **Version:** 1.0.0 · **SDK:** Dart `^3.5.0` · Flutter `>=3.24.0`  
-> **Dependencies:** Flutter SDK only (no hard deps on `image_picker`, `geolocator`, etc.)
+> **Dependencies:** Flutter SDK only (no hard deps on `image_picker`, `geolocator`, etc.)  
+> **Pub name:** `json_dynamic_form` · GitHub: [flutter-dynamic-form](https://github.com/anaghasmuttinakoppa/flutter-dynamic-form)
 
 This document is the end-to-end reference for the package: schema format, every field type, validators, conditions, controller API, plugins, theming, localization, values shape, and common pitfalls — so you should not need to reverse-engineer the source later.
 
@@ -60,11 +61,11 @@ Use it when forms are configured by a backend, CMS, or product team without ship
 
 ```yaml
 dependencies:
-  flutter_dynamic_form: ^1.0.0
+  json_dynamic_form: ^1.0.0
 ```
 
 ```dart
-import 'package:flutter_dynamic_form/flutter_dynamic_form.dart';
+import 'package:json_dynamic_form/json_dynamic_form.dart';
 ```
 
 ---
@@ -861,7 +862,7 @@ Bundled schemas under `example/assets/schemas/`:
 Import once:
 
 ```dart
-import 'package:flutter_dynamic_form/flutter_dynamic_form.dart';
+import 'package:json_dynamic_form/json_dynamic_form.dart';
 ```
 
 | Area | Types |

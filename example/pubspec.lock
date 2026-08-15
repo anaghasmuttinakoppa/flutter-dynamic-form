@@ -62,13 +62,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_dynamic_form:
-    dependency: "direct main"
-    description:
-      path: ".."
-      relative: true
-    source: path
-    version: "1.0.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -82,6 +75,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  json_dynamic_form:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "1.0.0"
   leak_tracker:
     dependency: transitive
     description:
