@@ -1,0 +1,21 @@
+{
+  "title": "Simple Form",
+  "description": "A minimal Phase 1 text form.",
+  "submitLabel": "Save",
+  "resetLabel": "Clear",
+  "fields": [
+    {
+      "type": "text",
+      "key": "name",
+      "label": "Name",
+      "placeholder": "Enter your name",
+      "required": true
+    },
+    {
+      "type": "email",
+      "key": "email",
+      "label": "Email",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "title": "Nested Profile",
+  "description": "Phase 3 nested groups with compare validation.",
+  "submitLabel": "Create Profile",
+  "fields": [
+    {
+      "type": "group",
+      "key": "account",
+      "label": "Account",
+      "helperText": "Sign-in credentials",
+      "fields": [
+        {
+          "type": "email",
+          "key": "email",
+          "label": "Email",
+          "required": true
+        },
+        {
+          "type": "password",
+          "key": "password",
+          "label": "Password",
+          "required": true,
+          "validators": [
+            { "type": "length", "min": 8, "message": "At least 8 characters" }
+          ]
+        },
+        {
+          "type": "password",
+          "key": "confirmPassword",
+          "label": "Confirm password",
+          "required": true,
+          "validators": [
+            {
+              "type": "compare",
+              "field": "password",
+              "operator": "equals",
+              "message": "Passwords must match"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "key": "profile",
+      "label": "Profile details",
+      "fields": [
+        {
+          "type": "text",
+          "key": "displayName",
+          "label": "Display name",
+          "required": true
+        },
+        {
+          "type": "date",
+          "key": "joinedOn",
+          "label": "Join date",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "type": "chips",
+          "key": "skills",
+          "label": "Skills",
+          "options": ["Flutter", "Dart", "UI", "Backend"]
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "key": "agree",
+      "label": "I agree to the privacy policy",
+      "required": true
+    }
+  ]
+}

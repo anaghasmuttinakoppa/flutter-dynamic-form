@@ -1,0 +1,68 @@
+{
+  "title": "Preferences",
+  "description": "Phase 2 selection and date fields.",
+  "submitLabel": "Save Preferences",
+  "fields": [
+    {
+      "type": "dropdown",
+      "key": "country",
+      "label": "Country",
+      "required": true,
+      "placeholder": "Select a country",
+      "options": [
+        { "value": "IN", "label": "India" },
+        { "value": "US", "label": "United States" },
+        { "value": "UK", "label": "United Kingdom" },
+        { "value": "AU", "label": "Australia" }
+      ]
+    },
+    {
+      "type": "radio",
+      "key": "contactMethod",
+      "label": "Preferred contact",
+      "required": true,
+      "options": [
+        { "value": "email", "label": "Email" },
+        { "value": "phone", "label": "Phone" },
+        { "value": "sms", "label": "SMS" }
+      ]
+    },
+    {
+      "type": "chips",
+      "key": "interests",
+      "label": "Interests",
+      "options": ["Flutter", "Dart", "Firebase", "Design", "DevOps"]
+    },
+    {
+      "type": "date",
+      "key": "birthDate",
+      "label": "Birth date",
+      "dateFormat": "yyyy-MM-dd",
+      "required": true
+    },
+    {
+      "type": "time",
+      "key": "reminderTime",
+      "label": "Daily reminder",
+      "dateFormat": "HH:mm"
+    },
+    {
+      "type": "datetime",
+      "key": "appointment",
+      "label": "Appointment",
+      "dateFormat": "yyyy-MM-dd HH:mm"
+    },
+    {
+      "type": "checkbox",
+      "key": "newsletter",
+      "label": "Subscribe to newsletter",
+      "defaultValue": true
+    },
+    {
+      "type": "switch",
+      "key": "darkMode",
+      "label": "Enable dark mode",
+      "defaultValue": false
+    }
+  ]
+}

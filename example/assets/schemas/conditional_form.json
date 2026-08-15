@@ -1,0 +1,72 @@
+{
+  "title": "Conditional Form",
+  "description": "Fields appear based on other answers.",
+  "submitLabel": "Continue",
+  "fields": [
+    {
+      "type": "dropdown",
+      "key": "country",
+      "label": "Country",
+      "required": true,
+      "options": [
+        { "value": "India", "label": "India" },
+        { "value": "Other", "label": "Other" }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "key": "state",
+      "label": "State",
+      "required": true,
+      "visibleWhen": { "field": "country", "operator": "equals", "value": "India" },
+      "options": [
+        "Karnataka",
+        "Maharashtra",
+        "Delhi",
+        "Tamil Nadu",
+        "Other"
+      ]
+    },
+    {
+      "type": "text",
+      "key": "otherCountry",
+      "label": "Specify country",
+      "required": true,
+      "visibleWhen": { "field": "country", "operator": "equals", "value": "Other" }
+    },
+    {
+      "type": "number",
+      "key": "age",
+      "label": "Age",
+      "required": true,
+      "min": 1,
+      "max": 120
+    },
+    {
+      "type": "text",
+      "key": "guardianName",
+      "label": "Guardian name",
+      "required": true,
+      "helperText": "Required when age is under 18.",
+      "visibleWhen": { "field": "age", "op": "lt", "value": 18 }
+    },
+    {
+      "type": "checkbox",
+      "key": "acceptTerms",
+      "label": "I accept the terms",
+      "required": true,
+      "enabledWhen": { "field": "age", "op": "gte", "value": 18 }
+    },
+    {
+      "type": "switch",
+      "key": "marketing",
+      "label": "Send me marketing emails",
+      "enabledWhen": {
+        "all": [
+          { "field": "acceptTerms", "operator": "equals", "value": true },
+          { "field": "age", "op": "gte", "value": 18 }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "title": "User Registration",
+  "description": "Create an account with validated fields.",
+  "submitLabel": "Register",
+  "fields": [
+    {
+      "type": "text",
+      "key": "fullName",
+      "label": "Full Name",
+      "placeholder": "Jane Doe",
+      "required": true,
+      "validators": [
+        { "type": "length", "min": 2, "max": 60, "message": "Name must be 2–60 characters" }
+      ]
+    },
+    {
+      "type": "email",
+      "key": "email",
+      "label": "Email",
+      "required": true,
+      "helperText": "We'll never share your email."
+    },
+    {
+      "type": "password",
+      "key": "password",
+      "label": "Password",
+      "required": true,
+      "validators": [
+        { "type": "length", "min": 8, "message": "Password must be at least 8 characters" }
+      ]
+    },
+    {
+      "type": "phone",
+      "key": "phone",
+      "label": "Phone",
+      "placeholder": "+1 555 0100",
+      "required": true
+    },
+    {
+      "type": "number",
+      "key": "age",
+      "label": "Age",
+      "min": 13,
+      "max": 120,
+      "required": true
+    },
+    {
+      "type": "multiline",
+      "key": "bio",
+      "label": "Bio",
+      "placeholder": "Tell us about yourself",
+      "minLines": 3,
+      "maxLines": 6
+    }
+  ]
+}

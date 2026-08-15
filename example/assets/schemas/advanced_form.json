@@ -1,0 +1,64 @@
+{
+  "title": "Advanced Controls",
+  "description": "Slider, rating, color, signature, repeatable + custom renderer.",
+  "submitLabel": "Save",
+  "fields": [
+    {
+      "type": "slider",
+      "key": "volume",
+      "label": "Volume",
+      "min": 0,
+      "max": 100,
+      "divisions": 10,
+      "defaultValue": 40
+    },
+    {
+      "type": "range_slider",
+      "key": "budget",
+      "label": "Budget range",
+      "min": 0,
+      "max": 1000,
+      "divisions": 20,
+      "defaultValue": [200, 600]
+    },
+    {
+      "type": "rating",
+      "key": "score",
+      "label": "Experience rating",
+      "max": 5,
+      "required": true
+    },
+    {
+      "type": "color",
+      "key": "themeColor",
+      "label": "Theme color",
+      "defaultValue": "#2196F3"
+    },
+    {
+      "type": "signature",
+      "key": "signOff",
+      "label": "Signature",
+      "required": true
+    },
+    {
+      "type": "repeatable",
+      "key": "references",
+      "label": "References",
+      "minItems": 1,
+      "maxItems": 3,
+      "fields": [
+        { "type": "text", "key": "name", "label": "Name", "required": true },
+        { "type": "email", "key": "email", "label": "Email" },
+        { "type": "phone", "key": "phone", "label": "Phone" }
+      ]
+    },
+    {
+      "type": "custom",
+      "customType": "badge",
+      "key": "badgeCode",
+      "label": "Badge code",
+      "placeholder": "ABC-123",
+      "required": true
+    }
+  ]
+}

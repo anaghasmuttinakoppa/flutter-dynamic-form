@@ -1,0 +1,30 @@
+name: flutter_dynamic_form
+description: >
+  A production-ready Flutter package that generates fully dynamic,
+  validated forms from JSON schemas — no manual widget wiring required.
+version: 1.0.0
+homepage: https://github.com/anaghasmuttinakoppa/flutter-dynamic-form
+repository: https://github.com/anaghasmuttinakoppa/flutter-dynamic-form
+issue_tracker: https://github.com/anaghasmuttinakoppa/flutter-dynamic-form/issues
+documentation: https://github.com/anaghasmuttinakoppa/flutter-dynamic-form#readme
+topics:
+  - forms
+  - json
+  - dynamic-forms
+  - validation
+  - widgets
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:

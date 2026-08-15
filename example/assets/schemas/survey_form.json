@@ -1,0 +1,38 @@
+{
+  "title": "Quick Survey",
+  "description": "Share a few details about your experience.",
+  "submitLabel": "Send Feedback",
+  "fields": [
+    {
+      "type": "text",
+      "key": "product",
+      "label": "Product Name",
+      "required": true
+    },
+    {
+      "type": "number",
+      "key": "rating",
+      "label": "Score (1-10)",
+      "required": true,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "type": "email",
+      "key": "contactEmail",
+      "label": "Contact Email",
+      "required": false,
+      "helperText": "Optional — only if you want a follow-up."
+    },
+    {
+      "type": "multiline",
+      "key": "feedback",
+      "label": "Feedback",
+      "required": true,
+      "placeholder": "What worked well? What could improve?",
+      "validators": [
+        { "type": "length", "min": 10, "message": "Please write at least 10 characters" }
+      ]
+    }
+  ]
+}

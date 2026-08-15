@@ -1,0 +1,46 @@
+{
+  "title": "Media Upload",
+  "description": "Phase 4 media fields (uses mock pickers in the example).",
+  "submitLabel": "Upload",
+  "fields": [
+    {
+      "type": "image",
+      "key": "avatar",
+      "label": "Profile photo",
+      "required": true,
+      "helperText": "Pick from gallery"
+    },
+    {
+      "type": "camera",
+      "key": "idPhoto",
+      "label": "ID photo",
+      "helperText": "Capture with camera"
+    },
+    {
+      "type": "file",
+      "key": "resume",
+      "label": "Resume",
+      "allowedExtensions": ["pdf", "doc", "docx"],
+      "required": true
+    },
+    {
+      "type": "location",
+      "key": "office",
+      "label": "Office location",
+      "required": true
+    },
+    {
+      "type": "email",
+      "key": "email",
+      "label": "Work email",
+      "required": true,
+      "validators": [
+        {
+          "type": "async",
+          "name": "uniqueEmail",
+          "message": "Email already registered"
+        }
+      ]
+    }
+  ]
+}
