@@ -74,7 +74,8 @@ Package verified for publish: schema pre-validation UI, responsive layout, analy
 
 ## Next Immediate Task
 
-GitHub: https://github.com/anaghasmuttinakoppa/flutter-dynamic-form · pub.dev publish.
+GitHub published: https://github.com/anaghasmuttinakoppa/flutter-dynamic-form  
+pub.dev: complete Google OAuth, then `dart pub publish --force` from the package root.
 
 ## Future Roadmap
 
