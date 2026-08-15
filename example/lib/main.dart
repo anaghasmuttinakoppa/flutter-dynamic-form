@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:json_dynamic_form/json_dynamic_form.dart';
+import 'package:json_driven_dynamic_form/json_driven_dynamic_form.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,7 +15,7 @@ class DynamicFormExampleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'json_dynamic_form Example',
+      title: 'json_driven_dynamic_form Example',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF0F766E)),
@@ -107,7 +107,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('json_dynamic_form'),
+        title: const Text('json_driven_dynamic_form'),
       ),
       body: ListView.separated(
         padding: const EdgeInsets.all(16),

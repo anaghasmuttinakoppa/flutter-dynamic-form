@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-08-15
 
 ### Changed
-- Published package name is **`json_dynamic_form`** (pub.dev rejected `flutter_dynamic_form` as too similar to `flutter_dynamic_forms`)
+- Published package name is **`json_driven_dynamic_form`**. pub.dev rejected `flutter_dynamic_form` (too similar to `flutter_dynamic_forms`) and `json_dynamic_form` was already taken.
 
 ### Added
 

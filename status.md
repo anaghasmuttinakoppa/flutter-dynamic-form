@@ -75,7 +75,7 @@ Package verified for publish: schema pre-validation UI, responsive layout, analy
 ## Next Immediate Task
 
 GitHub: https://github.com/anaghasmuttinakoppa/flutter-dynamic-form  
-Pub package name: `json_dynamic_form`
+Pub package name: `json_driven_dynamic_form`
 
 ## Future Roadmap
 

@@ -1,4 +1,4 @@
-name: json_dynamic_form
+name: json_driven_dynamic_form
 description: >
   A production-ready Flutter package that generates fully dynamic,
   validated forms from JSON schemas — no manual widget wiring required.

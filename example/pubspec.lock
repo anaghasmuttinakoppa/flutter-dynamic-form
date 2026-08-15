@@ -75,7 +75,7 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  json_dynamic_form:
+  json_driven_dynamic_form:
     dependency: "direct main"
     description:
       path: ".."
